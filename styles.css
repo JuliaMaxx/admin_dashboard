@@ -1,3 +1,26 @@
-h1 {
-    color: pink;
+/* general */
+body {
+    font-family: "Roboto", Helvetica;
+    margin: 0px;
+    padding: 0px;
+    height: 100dvh;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+
+/* delete later */
+.content,.sidebar {
+    border: 2px solid blue;
+}
+
+/* sidebar */
+.sidebar {
+    padding: 15px;
+    display: grid;
+    font-size: 1.2rem;
+    align-content: baseline;
+    gap: 20px;
 }
