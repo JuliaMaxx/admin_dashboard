@@ -12,7 +12,7 @@ main {
 }
 
 /* delete later */
-.content,.sidebar {
+.content,.sidebar, .topbar, .topbar > div {
     border: 2px solid blue;
 }
 
@@ -23,4 +23,29 @@ main {
     font-size: 1.2rem;
     align-content: baseline;
     gap: 20px;
+}
+
+/* topbar */
+.topbar {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.topbar > div {
+    display: flex;
+    gap: 10px;
+    padding: 20px 40px 20px 40px;
+}
+.searchbar{
+    background-color: lightgray;
+    flex: 1;
+}
+div.top_items2{
+    justify-content: space-between;
+    gap: 30px;
+}
+div.top_items1{
+    justify-content: start;
+    flex: 1;
+    max-width: 600px;
 }
