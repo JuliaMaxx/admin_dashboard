@@ -18,7 +18,7 @@ main {
 }
 
 /* delete later */
-.content,.sidebar, .topbar, .topbar > div, .welcomebar, .welcomebar > div {
+.content,.sidebar, .topbar, .topbar > div, .welcomebar, .welcomebar > div, .main_content, .section1, .section2, .section2>div, .subsection1 > div {
     border: 2px solid blue;
 }
 
@@ -71,4 +71,31 @@ div.top_items1{
 }
 .welcome_items2 {
     gap: 50px;
+}
+
+/* main content */
+.main_content {
+    gap: 15px; 
+    margin: 20px;
+}
+.section1 {
+    flex: 3;
+    flex-direction: column;
+    gap: 10px; 
+}
+.subsection1 {
+    flex: 1; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));;
+    align-items: stretch;
+}
+.subsection1 > div, .subsection2, .subsection3 {
+    padding: 25px; 
+}
+.section2 {
+    flex: 1;
+    gap: 20px; 
+}
+.section2 > div {
+    flex-direction: column;
+    gap: 10px;
 }
