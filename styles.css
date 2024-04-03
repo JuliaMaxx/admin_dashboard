@@ -4,6 +4,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100dvh;
+    box-sizing: border-box;
 }
 main {
     display: grid;
@@ -12,7 +13,7 @@ main {
 }
 
 /* delete later */
-.content,.sidebar, .topbar, .topbar > div {
+.content,.sidebar, .topbar, .topbar > div, .welcomebar, .welcomebar > div {
     border: 2px solid blue;
 }
 
@@ -24,6 +25,7 @@ main {
     align-content: baseline;
     gap: 20px;
 }
+
 
 /* topbar */
 .topbar {
@@ -48,4 +50,26 @@ div.top_items1{
     justify-content: start;
     flex: 1;
     max-width: 600px;
+}
+
+/* welcomebar */
+.welcomebar{
+    display: flex;
+    justify-content: space-between;
+}
+.welcomebar > div{
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    align-items: center;
+}
+.name_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.welcome_items1 {
+    gap: 15px;
+}
+.welcome_items2 {
+    gap: 50px;
 }
