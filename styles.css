@@ -22,7 +22,7 @@ a {
 }
 
 /* delete later */
-.content, .topbar, .topbar > div, .welcomebar, .welcomebar > div, .main_content, .section1, .section2, .section2>div, .subsection1 > div, .title {
+.welcomebar, .welcomebar > div, .main_content, .section1, .section2, .section2>div, .subsection1 > div, .title {
     border: 2px solid blue;
 }
 
@@ -72,25 +72,43 @@ h3 {
 
 /* topbar */
 .topbar {
-    gap: 30px;
+    gap: 20px;
     justify-content: space-between;
+    align-items: center; 
 }
 .topbar > div {
     gap: 10px;
-    padding: 20px 40px 20px 40px;
+    padding: 15px 40px 15px 40px;
 }
 .searchbar {
-    background-color: lightgray;
+    background-color: rgb(227, 227, 227);
+    border-radius: 20px;
+    border: none; 
+    padding: 5px; 
     flex: 1;
 }
 div.top_items2 {
+    align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 div.top_items1 {
     justify-content: start;
+    max-width: 600px; 
     flex: 1;
-    max-width: 600px;
+}
+.topbar_svg {
+    width: 22px;
+    fill: black; 
+}
+.profile_icon {
+    width: 40px; 
+    border-radius: 20px;
+}
+.username {
+    font-weight: 700;
+    text-wrap: nowrap;
+    color: black; 
 }
 
 /* welcomebar */
