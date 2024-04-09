@@ -16,18 +16,57 @@ main {
 .f {
     display: flex;
 }
+a {
+    text-decoration: none;
+    color: white; 
+}
 
 /* delete later */
-.content,.sidebar, .topbar, .topbar > div, .welcomebar, .welcomebar > div, .main_content, .section1, .section2, .section2>div, .subsection1 > div {
+.content, .topbar, .topbar > div, .welcomebar, .welcomebar > div, .main_content, .section1, .section2, .section2>div, .subsection1 > div, .title {
     border: 2px solid blue;
 }
 
 /* sidebar */
 .sidebar {
-    padding: 15px;
+    padding: 15px 20px 20px 15px;
     font-size: 1.2rem;
     align-content: baseline;
-    gap: 20px;
+    gap: 35px;
+    background-color: #1992d4;
+    color: white;
+}
+.items1, .items2 {
+    gap: 18px;
+    margin-bottom: 20px; 
+}
+.side_item, .side_header { 
+    justify-content: start;  
+    align-items: center;
+}
+.side_header { 
+    gap: 5px; 
+    font-weight: 600;
+}
+.side_item {
+    gap: 17px; 
+}
+.side_item {
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.1s;
+}
+.side_item:hover {
+    transform: scale(1.1);
+}
+h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.sidebar_svg {
+    width: 20px;
+    fill: white; 
+    padding-left: 9px;
 }
 
 
@@ -40,25 +79,25 @@ main {
     gap: 10px;
     padding: 20px 40px 20px 40px;
 }
-.searchbar{
+.searchbar {
     background-color: lightgray;
     flex: 1;
 }
-div.top_items2{
+div.top_items2 {
     justify-content: space-between;
     gap: 30px;
 }
-div.top_items1{
+div.top_items1 {
     justify-content: start;
     flex: 1;
     max-width: 600px;
 }
 
 /* welcomebar */
-.welcomebar{
+.welcomebar {
     justify-content: space-between;
 }
-.welcomebar > div{
+.welcomebar > div {
     padding: 20px 40px 20px 40px;
     align-items: center;
 }
@@ -79,17 +118,19 @@ div.top_items1{
     margin: 20px;
 }
 .section1 {
-    flex: 3;
+    flex: 2.5;
     flex-direction: column;
     gap: 10px; 
 }
 .subsection1 {
     flex: 1; 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
     align-items: stretch;
+    gap: 10px;
 }
 .subsection1 > div, .subsection2, .subsection3 {
     padding: 25px; 
+    font-size: 13px;
 }
 .section2 {
     flex: 1;
