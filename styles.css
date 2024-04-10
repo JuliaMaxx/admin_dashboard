@@ -22,7 +22,7 @@ a {
 }
 
 /* delete later */
-.welcomebar, .welcomebar > div, .main_content, .section1, .section2, .section2>div, .subsection1 > div, .title {
+.main_content, .section1, .section2, .section2>div, .subsection1 > div, .title {
     border: 2px solid blue;
 }
 
@@ -78,7 +78,7 @@ h3 {
 }
 .topbar > div {
     gap: 10px;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 35px 3px 35px;
 }
 .searchbar {
     background-color: rgb(227, 227, 227);
@@ -114,9 +114,11 @@ div.top_items1 {
 /* welcomebar */
 .welcomebar {
     justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
 }
 .welcomebar > div {
-    padding: 20px 40px 20px 40px;
+    padding: 20px 35px 10px 35px;
     align-items: center;
 }
 .name_content {
@@ -127,7 +129,27 @@ div.top_items1 {
     gap: 15px;
 }
 .welcome_items2 {
-    gap: 50px;
+    gap: 15px;
+}
+.profile_icon_big {
+    width: 70px; 
+    border-radius: 35px;
+}
+.username.name {
+    font-size: 1.2em;
+    text-wrap: wrap;
+}
+button {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    padding: 8px 20px; 
+    border-radius: 20px;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* main content */
@@ -142,7 +164,7 @@ div.top_items1 {
 }
 .subsection1 {
     flex: 1; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
     align-items: stretch;
     gap: 10px;
 }
