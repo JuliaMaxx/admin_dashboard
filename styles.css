@@ -5,6 +5,7 @@ body {
     padding: 0px;
     height: 100dvh;
     box-sizing: border-box;
+    background-color: #e2e8f0;
 }
 main {
     grid-template-columns: 1fr 4fr;
@@ -22,7 +23,7 @@ a {
 }
 
 /* delete later */
-.main_content, .section1, .section2, .section2>div, .subsection1 > div, .title {
+.section1, .section2 {
     border: 2px solid blue;
 }
 
@@ -75,6 +76,7 @@ h3 {
     gap: 20px;
     justify-content: space-between;
     align-items: center; 
+    background-color: white;
 }
 .topbar > div {
     gap: 10px;
@@ -116,6 +118,7 @@ div.top_items1 {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
 .welcomebar > div {
     padding: 20px 35px 10px 35px;
@@ -157,6 +160,23 @@ button:hover {
     gap: 15px; 
     margin: 20px;
 }
+.subsection1 > div, .subsection2, .subsection3 {
+    padding: 25px 15px; 
+    font-size: 13px;
+}
+.title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.card_button:hover {
+    transform: scale(1.1);
+}
+.card:hover {
+    transform: scale(1.01);
+    cursor: pointer; 
+}
+
+/* section 1 */
 .section1 {
     flex: 2.5;
     flex-direction: column;
@@ -164,14 +184,33 @@ button:hover {
 }
 .subsection1 {
     flex: 1; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
-    align-items: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    color: grey;
+}
+.card_name {
+    font-size: 1.18em;
+    font-weight: 600;
+    color: black; 
+}
+.card_button {
+    width: 26px;
+}
+.card {
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    border-left: 8px solid #76c5ef;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+.card_buttons {
+    align-self: end;
     gap: 10px;
 }
-.subsection1 > div, .subsection2, .subsection3 {
-    padding: 25px; 
-    font-size: 13px;
-}
+
+/* section 2 */
 .section2 {
     flex: 1;
     gap: 20px; 
