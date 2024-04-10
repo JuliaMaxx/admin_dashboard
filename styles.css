@@ -235,3 +235,15 @@ hr {
 .info > div {
     margin-top: 3px;;
 }
+.subsection3 {
+    flex-direction: column;
+    gap: 15px; 
+}
+.account {
+    align-items: center;
+    gap: 8px;
+    text-wrap: nowrap;
+}
+.account_info > .name {
+    color: black;
+}
